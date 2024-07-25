@@ -1,27 +1,26 @@
 pico-8 cartridge // http://www.pico-8.com
-version 38
+version 42
 __lua__
 -- pico-engine
 -- by cannon
 
-#include source/init.lua
-#include source/update.lua
-#include source/draw.lua
+#include source/process/init.lua
+#include source/process/update.lua
+#include source/process/draw.lua
 
-#include source/code/import.lua
-#include source/code/export.lua
-#include source/engine.lua
+#include source/helpers.lua
+#include source/interface.lua
+#include source/codebox.lua
 
-#include source/code/text_editor.lua
+#include source/scenes/code.lua
+#include lib/highlighter.lua
 
-#include source/scene/code.lua
-#include source/scene/sprite.lua
-#include source/scene/objects.lua
-#include source/scene/map.lua
+-->8
+--comment--commment
 
-#include source/code/utils.lua
-#include source/code/input.lua
 
+
+--empty project
 __gfx__
 00000000007070000070000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 00000000007070700070000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
